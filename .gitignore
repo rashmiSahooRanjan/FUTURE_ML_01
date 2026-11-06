@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Large data: keep raw Kaggle files out of GitHub (see README, Dataset setup)
+data/raw/*.csv
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated artefacts
+models/trained/*.joblib
+models/trained/*.pkl
+reports/exports/*
+!reports/exports/.gitkeep
+.DS_Store

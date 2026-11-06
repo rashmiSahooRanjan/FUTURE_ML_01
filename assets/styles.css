@@ -1,0 +1,53 @@
+/* SmartSales AI – shared styling. Colours adapt to the Streamlit light/dark theme. */
+:root {
+  --ss-accent: #0F766E;
+  --ss-accent-soft: rgba(15, 118, 110, 0.12);
+  --ss-warn: #B45309;
+  --ss-muted: #64748B;
+  --ss-radius: 14px;
+}
+
+.block-container { padding-top: 1.5rem; padding-bottom: 3rem; max-width: 1280px; }
+
+.ss-header {
+  background: linear-gradient(120deg, #0F766E 0%, #115E59 55%, #134E4A 100%);
+  color: #F8FAFC;
+  border-radius: var(--ss-radius);
+  padding: 1.4rem 1.8rem;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 6px 24px rgba(15, 118, 110, 0.18);
+}
+.ss-header h1 { color: #F8FAFC; font-size: 1.7rem; margin: 0.15rem 0 0.2rem 0; }
+.ss-header p { color: #CCFBF1; margin: 0; font-size: 0.95rem; }
+.ss-brand { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #99F6E4; }
+
+.ss-card {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: var(--ss-radius);
+  padding: 1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.03);
+  height: 100%;
+}
+.ss-kpi-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ss-muted); }
+.ss-kpi-value { font-size: 1.55rem; font-weight: 700; margin: 0.2rem 0; }
+.ss-kpi-note { font-size: 0.78rem; color: var(--ss-muted); }
+
+.ss-note {
+  border-left: 3px solid var(--ss-accent);
+  background: var(--ss-accent-soft);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  margin: 0.6rem 0 1rem 0;
+}
+.ss-warning {
+  border-left: 3px solid var(--ss-warn);
+  background: rgba(180, 83, 9, 0.1);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  margin: 0.6rem 0 1rem 0;
+}
+
+section[data-testid="stSidebar"] { border-right: 1px solid rgba(148, 163, 184, 0.25); }
+h2, h3 { letter-spacing: -0.01em; }

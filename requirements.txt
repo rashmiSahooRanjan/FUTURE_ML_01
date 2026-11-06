@@ -1,0 +1,17 @@
+# SmartSales AI – dependencies (verified on Python 3.13; project target is Python 3.10)
+streamlit>=1.40
+pandas>=2.0
+numpy>=1.24
+plotly>=5.18
+pytest>=7.4
+
+# Used by the forecasting phases (not yet wired into the app):
+scikit-learn>=1.3
+statsmodels>=0.14
+joblib>=1.3
+
+# Optional advanced models – install only when running those experiments:
+# xgboost>=2.0
+# lightgbm>=4.0
+# catboost>=1.2
+# tensorflow>=2.15
